@@ -15,18 +15,9 @@ function AddAdvertisementForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-        placeholder="Title"
-      />
-      <textarea
-        value={description}
-        onChange={(e) => setDescription(e.target.value)}
-        placeholder="Description"
-      />
-      <button type="submit">Add</button>
+      <input type="text" value={title} onChange={e => setTitle(e.target.value)} placeholder="Title" />
+      <textarea value={description} onChange={e => setDescription(e.target.value)} placeholder="Description"></textarea>
+      <button type="submit">Add Advertisement</button>
     </form>
   );
 }
